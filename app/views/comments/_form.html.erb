@@ -1,0 +1,14 @@
+<%= form_for([@blog, @blog.comments.build]) do |f| %>
+  <div class="form-group">
+    <%= f.label "Nombre" %><br>
+    <%= f.text_field :commenter, :class => "form-control" %>
+</div>
+  <div class="form-group">
+    <%= f.label "Comentario" %><br>
+    <%= f.text_area :body, :class => "form-control" %>
+</div>
+
+<p>
+    <%= f.submit "Comentar", :class => "btn btn-success" %>
+    </p>
+<% end %>

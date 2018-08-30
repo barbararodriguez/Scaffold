@@ -1,0 +1,15 @@
+<p>
+    <strong>Nombre:</strong>
+    <%= student.name %>
+  </p>
+ 
+  <p>
+    <strong>Edad:</strong>
+    <%= student.age %>
+  </p>
+
+    <p>
+    <%= link_to 'Eliminar alumno', [student.group, student],
+                   method: :delete,
+                   data: { confirm: '¿Estas seguro?' } %>
+    </p>

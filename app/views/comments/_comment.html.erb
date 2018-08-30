@@ -1,0 +1,12 @@
+<div class="panel panel-info">
+      <div class="panel-heading"><%= image_tag "profile.png", :class => "img-rounded", :style => "width:25px;heigh:25px;" %><%= comment.commenter %></div>
+      <div class="panel-body">
+        <%= comment.body %>
+      </div>
+    </div>
+    
+   
+    <%= link_to 'Eliminar commentario', [comment.blog, comment],
+                   method: :delete,
+                   data: { confirm: '¿Estas seguro?' }, :class => "btn btn-danger btn-xs"%> 
+    
